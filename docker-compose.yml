@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  ruby_scripts:
+    build:
+      context: .
+      dockerfile: Dockerfile_ruby
+    container_name: ruby_scripts
+    restart: always
+    tty: true
+    stdin_open: true

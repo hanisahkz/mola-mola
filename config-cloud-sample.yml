@@ -1,0 +1,3 @@
+BASEURL: "https://domain-name.atlassian.net"
+USERNAME: "user@domain.com"
+PASSWORD: "some_token"

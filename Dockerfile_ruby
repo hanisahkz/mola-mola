@@ -1,0 +1,8 @@
+FROM ruby:latest
+RUN apt-get update && apt-get install -y vim
+WORKDIR /ruby
+# TODO: Improve regex to only take configs without *-sample.
+# Expected behavior: Only config-server.yml and/or config-cloud.yml should be present
+COPY config-*.yml/ /ruby
+COPY /ruby /ruby
+RUN bundle install

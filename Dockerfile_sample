@@ -1,0 +1,18 @@
+# To modify, replace all that are wrapped within <*-placeholder>
+
+# Specify image that contains language of choice
+FROM <image-placeholder>:<tag-placeholder>
+
+# Install environment dependencies
+RUN apt-get update -qq && apt-get install -y vim
+
+# Set main directory for container
+WORKDIR /<folder-name-placeholder>
+
+# Copy stuffs needed from local folder into container
+COPY config-*.yml/ /<folder-name-placeholder>
+COPY /<folder-containing-scripts> /<folder-name-placeholder>
+
+# Command to install dependencies based on language of choice
+# and any additional steps
+RUN <command-to-be-used-placeholder>

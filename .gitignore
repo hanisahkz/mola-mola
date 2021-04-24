@@ -1,0 +1,5 @@
+*.json
+config-server.yml
+config-cloud.yml
+.idea
+.byebug_history

@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'typhoeus', '~> 1.0', '>= 1.0.1'
+gem 'json', '~> 2.5', '>= 2.5.1'
+gem 'oj', '~> 3.11', '>= 3.11.5'
+gem 'yaml', '~> 0.1.1'
+gem 'securerandom', '~> 0.1.0'
+
+# development
+gem 'byebug', '~> 11.1', '>= 11.1.3'
+gem 'logger', '~> 1.4', '>= 1.4.3'
